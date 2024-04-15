@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t nahuelmolea/docker-react -f dockerfile.dev .
